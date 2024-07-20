@@ -40,6 +40,6 @@ The basic steps of the sweep-line algorithm for computing all intersections of a
 
 ### Performance
 
-The algorithm operates in \( O((n + k) \log n) \) time, where \( n \) is the number of segments and \( k \) is the number of intersections. This efficiency is achieved through the use of balanced tree data structures and priority queues.
+The algorithm operates in \( O((n + k) log n) \) time, where \( n \) is the number of segments and \( k \) is the number of intersections. This efficiency is achieved through the use of balanced tree data structures and priority queues.
 
 ![](sweep-line.png)
