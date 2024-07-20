@@ -11,6 +11,7 @@ class Segment:
         if delta_x != 0:
             return delta_y / delta_x
         return None
+
     def y_intercept(self):
         if self.m:
             return self.start.y - (self.m * self.start.x)

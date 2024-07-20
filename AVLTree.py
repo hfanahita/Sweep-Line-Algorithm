@@ -1,5 +1,6 @@
 from Node import Node  # Import the Node class
 
+
 class AVLTree:
     def __init__(self):
         self.root = None

@@ -85,7 +85,6 @@ def is_intersect(segments):
         event = heapq.heappop(events)
         index = event.index
 
-
         if event.event_type == "Start":
             active_segments.insert((event.y, event.x, event.index))
 
@@ -121,7 +120,6 @@ def is_intersect(segments):
 
             prev_event = active_segments.predecessor((segments[index].start.y, segments[index].start.x, index))
             next_event = active_segments.successor((segments[index].start.y, segments[index].start.x, index))
-
 
             if prev_event and next_event and do_intersect(segments[prev_event[2]], segments[next_event[2]]):
                 pair = (min(prev_event[2], next_event[2]), max(prev_event[2], next_event[2]))
